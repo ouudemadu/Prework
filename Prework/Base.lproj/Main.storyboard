@@ -94,30 +94,6 @@
                                 <color key="textColor" red="1" green="0.81561478809999999" blue="0.52378288149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PQS-LO-lG2">
-                                <rect key="frame" x="50" y="451" width="314" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.17499999999999999" minValue="0.14999999999999999" maxValue="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Ou8-Kz-Jxk">
-                                        <rect key="frame" x="-7" y="8" width="328" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <imageReference key="minimumValueImage" image="15.square" catalog="system" symbolScale="large"/>
-                                        <imageReference key="maximumValueImage" image="20.square" catalog="system" symbolScale="large"/>
-                                        <connections>
-                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="y8h-hb-Tce"/>
-                                            <action selector="tipAdjuster:" destination="BYZ-38-t0r" eventType="valueChanged" id="uwC-wp-ZcA"/>
-                                        </connections>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adjust tip percentage manually" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlA-ck-Tt7">
-                                        <rect key="frame" x="63" y="45" width="188" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.64404549870000005" green="0.0" blue="0.02334390263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxR-3f-tGJ">
                                 <rect key="frame" x="186" y="402" width="42" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -125,38 +101,48 @@
                                 <color key="textColor" red="1" green="0.81561478809999999" blue="0.52378288149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rj9-qy-YXd">
-                                <rect key="frame" x="45" y="333" width="324" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a60-nA-xA4">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.81561478809999999" blue="0.52378288149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <segments>
-                                            <segment title="15%"/>
-                                            <segment title="18%"/>
-                                            <segment title="20%"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="xlf-45-ce1"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select tip amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbQ-i3-MAR">
-                                        <rect key="frame" x="109" y="39" width="107" height="16"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.64404549870000005" green="0.0" blue="0.02334390263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(15%)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azt-z6-MhZ">
                                 <rect key="frame" x="97" y="543" width="114" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <color key="textColor" red="1" green="0.81561478809999999" blue="0.52378288149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a60-nA-xA4">
+                                <rect key="frame" x="45" y="342" width="324" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.81561478809999999" blue="0.52378288149999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="xlf-45-ce1"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Adjust tip percentage manually" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlA-ck-Tt7">
+                                <rect key="frame" x="113" y="488" width="188" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.17499999999999999" minValue="0.14999999999999999" maxValue="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Ou8-Kz-Jxk">
+                                <rect key="frame" x="43" y="451" width="328" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <imageReference key="minimumValueImage" image="15.square" catalog="system" symbolScale="large"/>
+                                <imageReference key="maximumValueImage" image="20.square" catalog="system" symbolScale="large"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="y8h-hb-Tce"/>
+                                    <action selector="tipAdjuster:" destination="BYZ-38-t0r" eventType="valueChanged" id="uwC-wp-ZcA"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select tip amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wbQ-i3-MAR">
+                                <rect key="frame" x="154" y="381" width="107" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -172,9 +158,7 @@
                     <connections>
                         <outlet property="billAmountField" destination="AFL-ci-Xvy" id="QpZ-1Z-I9j"/>
                         <outlet property="partySizeField" destination="Wha-aE-Ufm" id="3Yh-Yh-GxT"/>
-                        <outlet property="segmentView" destination="Rj9-qy-YXd" id="Zah-Ft-jLk"/>
                         <outlet property="sliderValueLabel" destination="zlA-ck-Tt7" id="omY-Yg-2kS"/>
-                        <outlet property="sliderView" destination="PQS-LO-lG2" id="UU4-y6-CAH"/>
                         <outlet property="tipLabel" destination="Jsu-5G-ffB" id="i8U-hc-Vj8"/>
                         <outlet property="tipPercentageLabel" destination="Azt-z6-MhZ" id="8uo-Nk-Nvj"/>
                         <outlet property="tipSegmentedCtrlField" destination="a60-nA-xA4" id="WZD-ir-1rc"/>
