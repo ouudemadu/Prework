@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         billAmountField.becomeFirstResponder()
         
+        
     }
 
     @IBAction func onTap(_ sender: Any) {

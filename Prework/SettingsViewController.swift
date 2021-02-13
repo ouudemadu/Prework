@@ -12,6 +12,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var tip1TextField: UITextField!
     @IBOutlet weak var tip2TextField: UITextField!
     @IBOutlet weak var tip3TextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
