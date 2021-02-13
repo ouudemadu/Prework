@@ -41,25 +41,24 @@ class ViewController: UIViewController {
         
         
         // Get bill
-        let tipPercentages = [0.15,0.18,0.2]
         let bill = Double(billAmountField.text!) ?? 0
-        
+    
         // Update party size
+        let partySize = partySizeStepper.value
         partySizeLabel.text = String(Int(partySizeStepper.value))
         
         // Display tip percentage
+        let tipPercentages = [0.15,0.18,0.2]
         let tipPercentage = tipPercentages[tipSegmentedCtrlField.selectedSegmentIndex] * 100.0
         tipPercentageLabel.text = String(format: "(%.1f%%)", tipPercentage)
         
         // Calculate tip/total
-        let partySize = partySizeStepper.value
         let tip = (bill * tipPercentages[tipSegmentedCtrlField.selectedSegmentIndex])/partySize
         let total = (bill/partySize) + tip
         
         // Update tip/total labels
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-
     }
     
     /*-----------------------------------------------------*/
